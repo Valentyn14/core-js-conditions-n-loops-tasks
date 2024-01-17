@@ -343,9 +343,12 @@ function getIndexOf(str, letter) {
  */
 function isContainNumber(num, digit) {
   let res;
-  const str = String(num);
-  for (let i = 0; i < str; i += 1) {
-    if (str[i] === String(digit)) {
+  let numStr = '';
+  numStr += num;
+  let digitStr = '';
+  digitStr += digit;
+  for (let i = 0; i < numStr; i += 1) {
+    if (numStr[i] === digitStr) {
       res = true;
       break;
     } else {
